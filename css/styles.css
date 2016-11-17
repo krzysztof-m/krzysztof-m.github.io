@@ -1,0 +1,248 @@
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../scss/styles.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../scss/styles.scss */
+body {
+  background-color: #efefef;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+/* line 22, ../scss/styles.scss */
+a {
+  transition: all .2s linear;
+}
+
+/* line 25, ../scss/styles.scss */
+.projects-tags {
+  padding: 20px 10px;
+  text-align: center;
+}
+/* line 28, ../scss/styles.scss */
+.projects-tags button {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 3px;
+  padding: 5px 20px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  border: 2px #333 solid;
+}
+/* line 41, ../scss/styles.scss */
+.projects-tags button.active {
+  background-color: #fff;
+  color: #333;
+}
+
+/* line 47, ../scss/styles.scss */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* line 51, ../scss/styles.scss */
+.project {
+  width: 31.333%;
+  float: left;
+  margin: 1%;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.3);
+  font-size: 0;
+}
+/* line 60, ../scss/styles.scss */
+.project img {
+  max-width: 100%;
+  transition: all .4s ease;
+}
+/* line 64, ../scss/styles.scss */
+.project:hover .project-info {
+  bottom: 0;
+}
+/* line 67, ../scss/styles.scss */
+.project:hover .project-info p {
+  opacity: 1;
+}
+/* line 70, ../scss/styles.scss */
+.project:hover img {
+  transform: scale(1.2) rotate(3deg);
+}
+
+/* line 74, ../scss/styles.scss */
+.project-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: calc(-100% + 50px);
+  padding: 10px 30px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all .4s ease;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* line 84, ../scss/styles.scss */
+.project-info h3 {
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+/* line 91, ../scss/styles.scss */
+.project-info p {
+  transition: all 1s ease;
+  opacity: 0;
+}
+/* line 95, ../scss/styles.scss */
+.project-info .tags {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+/* line 100, ../scss/styles.scss */
+.project-info .projects-tags button, .projects-tags .project-info button, .project-info .tag, .project-info .project-btn {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 103, ../scss/styles.scss */
+.project-info .tag {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  font-size: 10px;
+  line-height: 10px;
+  margin: 0 3px;
+  padding: 2px 5px;
+  font-weight: 400;
+}
+/* line 114, ../scss/styles.scss */
+.project-info .project-btn {
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 20px;
+}
+/* line 123, ../scss/styles.scss */
+.project-info .project-btn:hover {
+  background: #fff;
+  color: #333;
+}
+/* line 128, ../scss/styles.scss */
+.project-info .fa {
+  margin: 0 5px;
+}
+/* line 131, ../scss/styles.scss */
+.project-info .project-btns {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 134, ../scss/styles.scss */
+.project-info .project-btns li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1099px) {
+  /* line 141, ../scss/styles.scss */
+  .project {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 146, ../scss/styles.scss */
+  .project {
+    width: 76%;
+    margin: 2% auto;
+    float: none;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* line 153, ../scss/styles.scss */
+  .project {
+    width: 96%;
+  }
+
+  /* line 156, ../scss/styles.scss */
+  .project-info {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
