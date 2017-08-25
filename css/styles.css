@@ -149,7 +149,7 @@ a {
   height: 100%;
   bottom: calc(-100% + 50px);
   padding: 10px 30px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   transition: all .4s ease;
   font-size: 14px;
   line-height: 20px;
